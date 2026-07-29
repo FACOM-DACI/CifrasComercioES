@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cifras de comercio de El Salvador </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 60px; /* Aumentado el margen inferior para separar del footer */
+        }
+
+        @media (max-width: 700px) {
+            .dashboard-container {
+                grid-template-columns: 1fr;
+            }
+        }
+       
+        .card {
+            background: white;
+            color: #333;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: #2a5298;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #1e3c72;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>📊 Dashboards FACOM</h1>
+
+<div class="dashboard-container">
+
+    <div class="card" onclick="location.href='dashboard1.html'">
+        <h2>Trámites Digitalizados</h2>
+        <p>Número de trámites digitalizados relacionados al comercio exterior</p>
+    </div>
+
+    <div class="card" onclick="location.href='dashboard2.html'">
+        <h2>Medidas Ejecutadas ENFC</h2>
+        <p>Medidas Estrategia Nacional de Facilitación del Comercio (ENFC)</p>
+    </div>
+   
+</div> <!-- Cierre del dashboard-container -->
+
+
+<footer>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 15px;">
+        <span>👥 Visitantes:</span>
+        <img src="https://visitor-badge.laobi.icu/badge?page_id=dashboards-facom-2024" 
+             alt="contador de visitas"
+             style="vertical-align: middle;">
+    </div>
+</footer>
+<footer>
+    © 2026 - Jorge Campos & Gabriel Rivas 
+</footer>
+
+</body>
+</html>
