@@ -43,7 +43,7 @@
         .card {
             background: white;
             color: #333;
-            border-radius: 20px;
+            border-radius: 15px;
             padding: 50px 60px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -55,7 +55,7 @@
 
         .card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
         }
 
         .card h2 {
@@ -74,21 +74,19 @@
         .btn {
             display: inline-block;
             margin-top: 25px;
-            padding: 14px 45px;
-            border-radius: 30px;
+            padding: 10px 20px;
+            border-radius: 25px;
             background: #2a5298;
             color: white;
             text-decoration: none;
             border: none;
-            font-size: 1.1rem;
-            font-weight: 600;
+            font-size: 1rem;
             cursor: pointer;
-            transition: background 0.3s ease, transform 0.2s ease;
+            transition: background 0.3s ease;
         }
 
         .btn:hover {
             background: #1e3c72;
-            transform: scale(1.05);
         }
 
         footer {
@@ -130,11 +128,6 @@
             .card p {
                 font-size: 1rem;
             }
-
-            .btn {
-                padding: 12px 35px;
-                font-size: 1rem;
-            }
         }
 
         @media (max-width: 480px) {
@@ -148,11 +141,6 @@
 
             .card h2 {
                 font-size: 1.3rem;
-            }
-
-            .btn {
-                padding: 10px 28px;
-                font-size: 0.9rem;
             }
 
             .dashboard-container {
